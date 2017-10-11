@@ -1,0 +1,10 @@
+internals/*
+node_modules/*
+www/*
+platforms/*
+.git/*
+plugins/*
+hooks/*
+docs/*
+server/*
+res/*

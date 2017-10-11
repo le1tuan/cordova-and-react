@@ -1,0 +1,15 @@
+# Don't check auto-generated stuff into git
+build/
+www/
+node_modules/
+
+# Cruft
+npm-debug.log
+
+# Cordova
+platforms/
+plugins/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
