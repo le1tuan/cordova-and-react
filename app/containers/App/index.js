@@ -12,18 +12,23 @@
  */
 
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-
+import {Switch, Route} from 'react-router-dom';
+import {rootAppDiv} from './styles';
 import HomePage from 'containers/HomePage/Loadable';
+import SignUpPage from 'containers/SignUpPage';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 export default function App() {
   return (
-    <div>
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route component={NotFoundPage} />
-      </Switch>
-    </div>
+    <MuiThemeProvider>
+      <rootAppDiv>
+        <Switch>
+          <Route exact path="/" component={HomePage}/>
+          <Route path="/signup" component={SignUpPage}/>
+          <Route component={NotFoundPage}/>
+        </Switch>
+      </rootAppDiv>
+    </MuiThemeProvider>
   );
 }

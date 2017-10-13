@@ -14,8 +14,8 @@ process.noDeprecation = true;
 module.exports = (options) => ({
   entry: options.entry,
   output: Object.assign({ // Compile into js/build.js
-    path: path.resolve(process.cwd(), 'www'),
-    publicPath: '/',
+    path: process.env.NODE_ENV !== 'development' ? path.resolve(process.cwd(), './cordova/www'):  path.resolve(process.cwd(), 'build') ,
+    publicPath: process.env.NODE_ENV !== 'development' ? '' :'/',
   }, options.output), // Merge with env dependent settings
   module: {
     rules: [

@@ -10,15 +10,19 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import { RootHomePageDiv, Banner, renderComponent } from './styles';
 
+const labelButton = ["Register By Email", "Register By Facebook", "Or", "Login"]
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
+    const content = labelButton.map(x => {
+      return renderComponent(x);
+    });
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <RootHomePageDiv>
+        <Banner/>
+        {content}
+      </RootHomePageDiv>
     );
   }
 }

@@ -12,71 +12,12 @@
   <link rel="manifest" href="manifest.json">
   <meta name="mobile-web-app-capable" content="yes">
   <title>LETE</title>
-  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500&amp;subset=latin" media="all">
-  <style type="text/css">
-  html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
-
-  p {
-    color: #eee;
-    text-align: center;
-    margin: 60px 0 30px 0;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  body {
-    font-family: "Noto Sans Japanese", sans-serif;
-    /**background: #34495e;*/
-    background: #e1e3e4;
-    font-size: 14px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-
-    -webkit-touch-callout: none;
-    -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
-    text-size-adjust: none;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-rendering: optimizeLegibility;
-    -webkit-backface-visibility: hidden;
-    -webkit-user-drag: none;
-    -ms-content-zooming: none;
-  }
-  </style>
 </head>
 <body>
   <!-- The app hooks into this div -->
   <div id="app"></div>
-  <!-- A lot of magic happens in this file. HtmlWebpackPlugin automatically includes all assets (e.g. bundle.js, main.css) with the correct HTML tags, which is why they are missing in this HTML file. Don't add any assets here! (Check out webpackconfig.js if you want to know more) -->
-  <script>
-    var WebFontConfig = {
-      google: { families: [ 'Roboto:400,300,500:latin' ] }
-    };
-    (function() {
-      var wf = document.createElement('script');
-      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-    })();
-  </script>
   <script type="text/javascript" src="cordova.js"></script>
 </body>
 </html>
